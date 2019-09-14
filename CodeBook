@@ -1,0 +1,36 @@
+# UCIHARS Code Book
+Code Book for Getting and Cleaning Data Coursera Assignment
+
+-  'CodeBook.md' is a code book that describes the variables, the data, and transformations to clean up the data
+
+Variables:
+=========================================
+This data set has the following variables;
+-activity; a set of characters that describe one of 6 activities undertaken by subjects in the experiement;
+"Walking", ,"Walking upstairs","Walking downstairs","sitting","standing","laying"
+
+-subject; an integer used to represent the different subjects who performed the experiment
+
+-mean and standard deviation of signals measured in the original experiment
+
+Data:
+=========================================
+A desciription of original data used to conduct this analysis is available at:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The original dataset can be obtained at:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+This code combines the files provided above into a single labelled file and extracts all mean and standard deviation vectors.
+This code uses the dplyr package to summarised data provides the mean value of each activity and subject group in the original dataset.
+
+Transformations:
+=========================================
+This code uses rbind() and cbind() to combine original data into a single dataframe.
+grep() is used to extract only standard deviation and mean values.
+sub() and gsub() functions are used to provide readable labels to the dataframe.
+The select() and summarize_all() functions in the dplyr package are used to average mean and standard deviation.
+
+
+
+
