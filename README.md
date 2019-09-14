@@ -19,6 +19,7 @@ The dataset includes the following files:
 
 - 'README.txt' explains how the scripts work and how they are connected
 - 'Assignment.R' provides the code that was used to perform the analysis
+-  'CodeBook.md' is a code book that describes the variables, the data, and transformations to clean up the data
 
 Acknowledgements:
 ========
